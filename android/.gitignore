@@ -1,0 +1,17 @@
+/build.xml
+/local.properties
+/local.mk
+/bin/
+/gen/
+/obj/
+/assets/
+
+/libs/armeabi/
+/libs/armeabi-v7a/
+/libs/arm64-v8a/
+/libs/mips/
+/libs/mips64/
+/libs/x86/
+/libs/x86_64/
+
+/src/**/OpenGLApplication.java
