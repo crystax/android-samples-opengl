@@ -53,3 +53,7 @@ When it's done, plug your Android device by USB, cd to `android` folder and type
 ```
 make run
 ```
+
+## Demo
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/wUxPXT_gEmA" frameborder="0" allowfullscreen></iframe>
