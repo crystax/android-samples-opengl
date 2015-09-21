@@ -56,4 +56,4 @@ make run
 
 ## Demo
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/wUxPXT_gEmA" frameborder="0" allowfullscreen></iframe>
+[![Screen record](http://i.imgur.com/QVhUUfe.png)](https://youtu.be/wUxPXT_gEmA "Screen record")
