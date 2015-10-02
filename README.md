@@ -46,6 +46,16 @@ check it as below:
 brew info crystax-ndk
 ```
 
+Alternatively, you can download latest daily build([darwin](https://dl.crystax.net/ndk/darwin/current/),
+[linux](https://dl.crystax.net/ndk/linux/current/), [windows](https://dl.crystax.net/ndk/windows/current/))
+and unpack it somewhere:
+
+```
+curl -OL https://dl.crystax.net/ndk/darwin/current/crystax-ndk-10.2.1-b689-darwin-x86_64.bin
+chmod +x crystax-ndk-10.2.1-b689-darwin-x86_64.bin
+./crystax-ndk-10.2.1-b689-darwin-x86_64.bin
+```
+
 Now, create `anroid/local.mk` with settings pointing to your Android SDK and CrystaX NDK installations.
 You can look into `android/local.mk.sample` for example.
 
