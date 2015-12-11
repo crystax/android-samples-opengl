@@ -51,9 +51,8 @@ Alternatively, you can download latest daily build([darwin](https://dl.crystax.n
 and unpack it somewhere:
 
 ```
-curl -OL https://dl.crystax.net/ndk/darwin/current/crystax-ndk-10.2.1-b689-darwin-x86_64.bin
-chmod +x crystax-ndk-10.2.1-b689-darwin-x86_64.bin
-./crystax-ndk-10.2.1-b689-darwin-x86_64.bin
+curl -OL https://dl.crystax.net/ndk/darwin/current/crystax-ndk-10.2.1-b769-darwin-x86_64.tar.xz
+tar xf crystax-ndk-10.2.1-b769-darwin-x86_64.tar.xz
 ```
 
 Now, create `anroid/local.mk` with settings pointing to your Android SDK and CrystaX NDK installations.
