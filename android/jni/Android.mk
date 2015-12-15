@@ -29,13 +29,24 @@ LOCAL_PATH := $(call my-dir)
 
 COMMON_SRCPATH  := ../../common
 
-COMMON_SRCFILES :=  \
+COMMON_SRCFILES  := \
 	AppController.m \
 
 ANDROID_SRCFILES := \
 	engine.m        \
 	main.m          \
 	platform.m      \
+
+NOARC_SRCFILES   := \
+	legacy.m        \
+
+include $(CLEAR_VARS)
+
+LOCAL_MODULE := legacy
+LOCAL_SRC_FILES := legacy.m
+LOCAL_OBJCFLAGS := -fno-objc-arc -fno-objc-exception
+
+include $(BUILD_STATIC_LIBRARY)
 
 include $(CLEAR_VARS)
 
@@ -45,6 +56,7 @@ LOCAL_C_INCLUDES := $(LOCAL_PATH)/$(COMMON_SRCPATH)
 LOCAL_CFLAGS     := -Wall -Werror -DGL_GLEXT_PROTOTYPES=1
 LOCAL_LDLIBS     := -llog -landroid -lEGL -lGLESv2
 LOCAL_STATIC_LIBRARIES := android_native_app_glue
+LOCAL_STATIC_LIBRARIES += legacy
 
 include $(BUILD_SHARED_LIBRARY)
 

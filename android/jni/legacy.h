@@ -28,30 +28,8 @@
  */
 
 #import <Foundation/Foundation.h>
-#import <android/native_activity.h> // for ANativeActivity
-#import <android/native_window.h>   // for ANativeWindow
 
-#import "Surface.h"
-#import "legacy.h"
-
-struct android_app;
-
-@interface Engine : NSObject<Surface>
-
-- (instancetype)initWithAndroidApp:(struct android_app*)app;
-- (void)setupGL;
-- (void)tearDownGL;
-- (void)render;
-
-- (void)touchBegan:(CGPoint)point;
-- (void)touchMoved:(CGPoint)point;
-- (void)touchEnded:(CGPoint)point;
-- (void)touchCancelled:(CGPoint)point;
-
-- (void)windowResized;
-
-@property (assign, readonly) ANativeWindow *window;
-@property (assign, readonly) ANativeActivity *activity;
-@property (retain) LegacyInterface *legacy;
-
+@interface LegacyInterface : NSObject
+- (LegacyInterface*) init;
+- (void) dealloc;
 @end

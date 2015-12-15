@@ -80,8 +80,13 @@ void glBindVertexArrayOES(GLuint array)
     surfaceSize = CGSizeZero;
 
     self.app = nil;
+    self.legacy = [[LegacyInterface alloc] init];
 
     return self;
+}
+
+- (void) dealloc {
+    self.legacy = nil;
 }
 
 - (void)setupGL {
