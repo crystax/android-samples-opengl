@@ -33,9 +33,9 @@ COMMON_SRCFILES  := \
 	AppController.m \
 
 ANDROID_SRCFILES := \
-	engine.m        \
-	main.m          \
-	platform.m      \
+	engine.mm       \
+	main.mm         \
+	platform.mm     \
 
 NOARC_SRCFILES   := \
 	legacy.m        \

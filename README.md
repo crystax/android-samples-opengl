@@ -39,7 +39,7 @@ If you're on OS X and have the [Homebrew](http://brew.sh), it's simple to instal
 brew install android-sdk crystax-ndk ant
 ```
 
-Please note, however, that CrystaX NDK should be of version 10.3.0 or higher. With Homebrew, you can
+Please note, however, that CrystaX NDK should be of version 10.3.1 or higher. With Homebrew, you can
 check it as below:
 
 ```
@@ -51,8 +51,8 @@ Alternatively, you can download latest daily build([darwin](https://dl.crystax.n
 and unpack it somewhere:
 
 ```
-curl -OL https://dl.crystax.net/ndk/darwin/current/crystax-ndk-10.2.1-b769-darwin-x86_64.tar.xz
-tar xf crystax-ndk-10.2.1-b769-darwin-x86_64.tar.xz
+curl -OL https://dl.crystax.net/ndk/darwin/current/crystax-ndk-10.3.1-b799-darwin-x86_64.tar.xz
+tar xf crystax-ndk-10.3.1-b799-darwin-x86_64.tar.xz
 ```
 
 Now, create `anroid/local.mk` with settings pointing to your Android SDK and CrystaX NDK installations.
